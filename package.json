@@ -1,0 +1,46 @@
+{
+  "name": "toy-apollo-server-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tslint.fix": "tslint --fix \"src/**/*.ts\" \"test/**/*.ts\" ",
+    "eslint.fix": "eslint --fix \"src/**/*.ts\" \"test/**/*.ts\" ",
+    "test": "mocha \"test/**/*.ts\" ",
+    "start": "ts-node src/app",
+    "start.dev": "nodemon src/app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.4.8",
+    "express": "^4.16.4",
+    "graphql": "^14.2.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*"
+    ],
+    "delay": "2500"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "apollo-cache-inmemory": "^1.5.1",
+    "apollo-client": "^2.5.1",
+    "apollo-link-ws": "^1.0.17",
+    "chai": "^4.2.0",
+    "eslint": "^5.8.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "mocha": "^6.1.3",
+    "nodemon": "^1.18.11",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.3",
+    "typescript-eslint-parser": "^22.0.0"
+  }
+}
